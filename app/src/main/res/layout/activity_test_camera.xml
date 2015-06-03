@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.camera.demol.view.MySurfaceView
+        android:id="@+id/test_surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout android:id="@+id/test_bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/test_takePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="takePicture"/>
+
+        <Button
+            android:id="@+id/test_stop"
+            android:layout_toRightOf="@+id/test_takePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stopCamera"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
